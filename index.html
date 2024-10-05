@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Input Range</title>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      input {
+        font-size: 30px;
+      }
+      input:out-of-range {
+        background-color: rgba(255, 0, 0, 0.25);
+      }
+      input:in-range {
+        background-color: rgba(0, 255, 0, 0.25);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Digite um número entre 1 e 100</h1>
+    <input type="number" min="1" max="100" placeholder="num" />
+  </body>
+</html>
